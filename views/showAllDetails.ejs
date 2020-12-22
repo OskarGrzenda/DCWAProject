@@ -1,0 +1,47 @@
+<body>
+    <h1>All City Details</h1>
+
+    <form action="/showAllDetails" method="POST">
+        <% city.forEach((city)=> { %>
+
+            <label>City Code</label>
+            <input type="text" name="cityCode" value="<%= city.cty_code %>"><br>
+
+            <label>Country Code</label>
+            <input type="text" name="countryCode" value="<%= city.co_code %>"><br>
+
+            <label>City Name</label>
+            <input type="text" name="cityName" value="<%= city.cty_name %>"><br>
+
+            <label>Population</label>
+            <input type="text" name="population" value="<%= city.population %>"><br>
+
+            <label>Coastal</label>
+            <input type="text" name="isCoastal" value="<%= city.isCoastal %>"><br>
+
+            <label>Area (KM)</label>
+            <input type="text" name="areaKM" value="<%= city.areaKM %>"><br>
+
+            <br>
+
+            <label>Country Code</label>
+            <input type="text" name="countryDetails" value="<%= city.co_code %>"><br>
+            <label>Country Name</label>
+            <input type="text" name="countryDetails" value="<%= city.co_name %>"><br>
+
+            <br>
+            <br>
+            <br>
+
+        <% }) %>
+    </form>
+
+
+
+</body>
+
+<button type="button">
+    <a href="http://localhost:3000/">
+        HOME
+    </a>
+</button>

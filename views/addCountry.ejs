@@ -1,0 +1,27 @@
+<body>
+    <h1>Add Country</h1>
+
+    <ul>
+        <li>Country Code must be 3 characters</li>
+        <li>Country Name must be at least 3 characters</li>
+    </ul>
+
+    <form action="/addCountry" method="POST">
+        <label>Country Code:</label>
+        <input required type="text" name="countryCode"><br>
+
+        <label>Country Name</label>
+        <input required type="text" name="countryName"><br>
+
+        <label>Country Details</label>
+        <input required type="text" name="countryDetails"><br>
+
+        <input type="submit" value="Add">
+    </form>
+</body>
+
+<button type="button">
+    <a href="http://localhost:3000/">
+        HOME
+    </a>
+</button>

@@ -1,0 +1,49 @@
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+
+
+<table>
+
+    <h1>Heads Of State</h1>
+
+
+    <button type="button">
+        <a href="http://localhost:3000/addHeadsOfState">
+            Add Heads Of State
+        </a>
+    </button>
+    <button type="button">
+        <a href="http://localhost:3000/deleteHeadsOfState">
+            Delete Heads Of State
+        </a>
+    </button>
+
+
+    <tr>
+        <th>Country Code</th>
+        <th>Head Of State</th>
+    </tr>
+    <!--array called city-->
+    <% headsOfState.forEach((headsOfState)=> { %>
+        <tr>
+            <td>
+                <%= headsOfState._id %>
+            </td>
+            <td>
+                <%= headsOfState.headOfState %>
+            </td>
+        </tr>
+        <% }) %>
+</table>
+
+
+<button type="button">
+    <a href="http://localhost:3000/">
+        HOME
+    </a>
+</button>

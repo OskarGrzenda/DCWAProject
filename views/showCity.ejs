@@ -1,0 +1,54 @@
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+
+<table>
+    <tr>
+        <th>CityCode</th>
+        <th>CountryCode</th>
+        <th>CityName</th>
+        <th>Population</th>
+        <th>isCoastal</th>
+        <th>AreaInKM</th>
+    </tr>
+    <!--array called city-->
+    <% city.forEach((city)=> { %>
+        <tr>
+            <td>
+                <%= city.cty_code %>
+            </td>
+            <td>
+                <%= city.co_code %>
+            </td>
+            <td>
+                <%= city.cty_name %>
+            </td>
+            <td>
+                <%= city.population %>
+            </td>
+            <td>
+                <%= city.isCoastal %>
+            </td>
+            <td>
+                <%= city.areaKM %>
+            </td>
+            <td>
+                <button type="button">
+                    <a href="http://localhost:3000/showAllDetails">
+                        All Details
+                    </a>
+                </button>
+            </td>
+        </tr>
+        <% }) %>
+</table>
+
+<button type="button">
+    <a href="http://localhost:3000/">
+        HOME
+    </a>
+</button>
