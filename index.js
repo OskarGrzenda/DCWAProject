@@ -150,7 +150,7 @@ app.get('/updateCountry', (req, res) => { //gets and displays the ejs file
 app.post('/updateCountry', (req, res) => {
     mySQLDAO.updateCountry(req.body.countryCode, req.body.countryName, req.body.countryDetails)//adds info from ejs and sends to function
         .then((result) => {
-            res.redirect("/country")//redirects to page country
+           res.redirect("/country")//redirects to page country
         })
         .catch((error) => {
             res.send(error)

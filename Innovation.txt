@@ -1,7 +1,0 @@
-Innovation
-
-In this project I added some of my own features such as....
-
-* A DELETE button for Heads Of State 
-
-* I also adding some styling to the home page 
